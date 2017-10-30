@@ -13,10 +13,10 @@ Pod::Spec.new do |s|
   s.license      = "MIT"
   s.author             = { "huangzhifei" => "huangzhifei2009@126.com" }
   s.platform     = :ios
-  s.ios.deployment_target = "7.0"
+  s.ios.deployment_target = "8.0"
   s.source       = { :git => "https://github.com/huangzhifei/PSProgressHUD.git", :tag => s.version }
   s.source_files  = "PSProgressHUD/PSProgressHUD/*.{h,m}"
-  s.frameworks = 'UIKit', 'Foundation'
+  s.frameworks = 'UIKit', 'Foundation', 'CoreGraphics'
   s.requires_arc = true
   s.dependency "MBProgressHUD", "0.9.2"
 

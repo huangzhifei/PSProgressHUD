@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "PSProgressHUD.h"
 
 @interface ViewController ()
 
@@ -17,6 +18,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    [PSProgressHUD showHUD:^(PSProgressHUD *make) {
+        make.afterDelay(4.0);
+    }];
 }
 
 
