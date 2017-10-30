@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
 
 
   s.name         = "PSProgressHUD"
-  s.version      = "0.0.1"
+  s.version      = "0.0.3"
   s.summary      = "使用链式的方式来封装MBProgressHUD,方便书写"
 
   s.description  = <<-DESC

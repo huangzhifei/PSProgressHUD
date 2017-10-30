@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <MBProgressHUD.h>
+#import "MBProgressHUD.h"
 
 #define kPSProgressHUD [PSProgressHUD new]
 
