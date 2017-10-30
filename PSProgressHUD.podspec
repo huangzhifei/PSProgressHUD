@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = "7.0"
   s.source       = { :git => "https://github.com/huangzhifei/PSProgressHUD.git", :tag => s.version }
   s.source_files  = "PSProgressHUD/PSProgressHUD/*.{h,m}"
-  s.frameworks = "Foundation","UIKit"
+  s.frameworks = 'UIKit', 'Foundation'
   s.requires_arc = true
   s.dependency "MBProgressHUD", "0.9.2"
 
