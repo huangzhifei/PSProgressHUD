@@ -7,76 +7,68 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0FF055098ACE09C8E1F5A9A8 /* libPods-PSProgressHUD.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EFD4246BB1E299E723370E2 /* libPods-PSProgressHUD.a */; };
-		9DDCAC2C1FA7219B00AD7858 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DDCAC2B1FA7219B00AD7858 /* AppDelegate.m */; };
-		9DDCAC2F1FA7219B00AD7858 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DDCAC2E1FA7219B00AD7858 /* ViewController.m */; };
-		9DDCAC321FA7219B00AD7858 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DDCAC301FA7219B00AD7858 /* Main.storyboard */; };
-		9DDCAC341FA7219B00AD7858 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DDCAC331FA7219B00AD7858 /* Assets.xcassets */; };
-		9DDCAC371FA7219B00AD7858 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DDCAC351FA7219B00AD7858 /* LaunchScreen.storyboard */; };
-		9DDCAC3A1FA7219B00AD7858 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DDCAC391FA7219B00AD7858 /* main.m */; };
-		9DDCAC441FA7219B00AD7858 /* PSProgressHUDTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DDCAC431FA7219B00AD7858 /* PSProgressHUDTests.m */; };
-		9DDCAC4F1FA7219B00AD7858 /* PSProgressHUDUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DDCAC4E1FA7219B00AD7858 /* PSProgressHUDUITests.m */; };
-		9DDCAC5F1FA721B100AD7858 /* PSProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DDCAC5E1FA721B100AD7858 /* PSProgressHUD.m */; };
+		9D8F43AE1FBD88A30001BAE9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D8F43AD1FBD88A30001BAE9 /* AppDelegate.m */; };
+		9D8F43B11FBD88A30001BAE9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D8F43B01FBD88A30001BAE9 /* ViewController.m */; };
+		9D8F43B41FBD88A30001BAE9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D8F43B21FBD88A30001BAE9 /* Main.storyboard */; };
+		9D8F43B61FBD88A30001BAE9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D8F43B51FBD88A30001BAE9 /* Assets.xcassets */; };
+		9D8F43B91FBD88A30001BAE9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D8F43B71FBD88A30001BAE9 /* LaunchScreen.storyboard */; };
+		9D8F43BC1FBD88A30001BAE9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D8F43BB1FBD88A30001BAE9 /* main.m */; };
+		9D8F43C61FBD88A30001BAE9 /* PSProgressHUDTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D8F43C51FBD88A30001BAE9 /* PSProgressHUDTests.m */; };
+		9D8F43D11FBD88A30001BAE9 /* PSProgressHUDUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D8F43D01FBD88A30001BAE9 /* PSProgressHUDUITests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		9DDCAC401FA7219B00AD7858 /* PBXContainerItemProxy */ = {
+		9D8F43C21FBD88A30001BAE9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 9DDCAC1F1FA7219B00AD7858 /* Project object */;
+			containerPortal = 9D8F43A11FBD88A30001BAE9 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 9DDCAC261FA7219B00AD7858;
+			remoteGlobalIDString = 9D8F43A81FBD88A30001BAE9;
 			remoteInfo = PSProgressHUD;
 		};
-		9DDCAC4B1FA7219B00AD7858 /* PBXContainerItemProxy */ = {
+		9D8F43CD1FBD88A30001BAE9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 9DDCAC1F1FA7219B00AD7858 /* Project object */;
+			containerPortal = 9D8F43A11FBD88A30001BAE9 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 9DDCAC261FA7219B00AD7858;
+			remoteGlobalIDString = 9D8F43A81FBD88A30001BAE9;
 			remoteInfo = PSProgressHUD;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		28EBAE4709DAA2CFA7BD16BD /* Pods-PSProgressHUD.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PSProgressHUD.release.xcconfig"; path = "Pods/Target Support Files/Pods-PSProgressHUD/Pods-PSProgressHUD.release.xcconfig"; sourceTree = "<group>"; };
-		7EFD4246BB1E299E723370E2 /* libPods-PSProgressHUD.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PSProgressHUD.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9DDCAC271FA7219B00AD7858 /* PSProgressHUD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PSProgressHUD.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		9DDCAC2A1FA7219B00AD7858 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		9DDCAC2B1FA7219B00AD7858 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		9DDCAC2D1FA7219B00AD7858 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		9DDCAC2E1FA7219B00AD7858 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		9DDCAC311FA7219B00AD7858 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		9DDCAC331FA7219B00AD7858 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		9DDCAC361FA7219B00AD7858 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		9DDCAC381FA7219B00AD7858 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9DDCAC391FA7219B00AD7858 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		9DDCAC3F1FA7219B00AD7858 /* PSProgressHUDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PSProgressHUDTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9DDCAC431FA7219B00AD7858 /* PSProgressHUDTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PSProgressHUDTests.m; sourceTree = "<group>"; };
-		9DDCAC451FA7219B00AD7858 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9DDCAC4A1FA7219B00AD7858 /* PSProgressHUDUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PSProgressHUDUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9DDCAC4E1FA7219B00AD7858 /* PSProgressHUDUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PSProgressHUDUITests.m; sourceTree = "<group>"; };
-		9DDCAC501FA7219B00AD7858 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9DDCAC5D1FA721B100AD7858 /* PSProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSProgressHUD.h; sourceTree = "<group>"; };
-		9DDCAC5E1FA721B100AD7858 /* PSProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSProgressHUD.m; sourceTree = "<group>"; };
-		B319C594B12A429A7FC676E5 /* Pods-PSProgressHUD.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PSProgressHUD.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PSProgressHUD/Pods-PSProgressHUD.debug.xcconfig"; sourceTree = "<group>"; };
+		9D8F43A91FBD88A30001BAE9 /* PSProgressHUD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PSProgressHUD.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D8F43AC1FBD88A30001BAE9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9D8F43AD1FBD88A30001BAE9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9D8F43AF1FBD88A30001BAE9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		9D8F43B01FBD88A30001BAE9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		9D8F43B31FBD88A30001BAE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9D8F43B51FBD88A30001BAE9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9D8F43B81FBD88A30001BAE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9D8F43BA1FBD88A30001BAE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D8F43BB1FBD88A30001BAE9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9D8F43C11FBD88A30001BAE9 /* PSProgressHUDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PSProgressHUDTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D8F43C51FBD88A30001BAE9 /* PSProgressHUDTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PSProgressHUDTests.m; sourceTree = "<group>"; };
+		9D8F43C71FBD88A30001BAE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D8F43CC1FBD88A30001BAE9 /* PSProgressHUDUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PSProgressHUDUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D8F43D01FBD88A30001BAE9 /* PSProgressHUDUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PSProgressHUDUITests.m; sourceTree = "<group>"; };
+		9D8F43D21FBD88A30001BAE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		9DDCAC241FA7219B00AD7858 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0FF055098ACE09C8E1F5A9A8 /* libPods-PSProgressHUD.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9DDCAC3C1FA7219B00AD7858 /* Frameworks */ = {
+		9D8F43A61FBD88A30001BAE9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9DDCAC471FA7219B00AD7858 /* Frameworks */ = {
+		9D8F43BE1FBD88A30001BAE9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D8F43C91FBD88A30001BAE9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -86,102 +78,70 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		9DDCAC1E1FA7219B00AD7858 = {
+		9D8F43A01FBD88A30001BAE9 = {
 			isa = PBXGroup;
 			children = (
-				9DDCAC291FA7219B00AD7858 /* PSProgressHUD */,
-				9DDCAC421FA7219B00AD7858 /* PSProgressHUDTests */,
-				9DDCAC4D1FA7219B00AD7858 /* PSProgressHUDUITests */,
-				9DDCAC281FA7219B00AD7858 /* Products */,
-				F19ED08BE2617BBF64133249 /* Pods */,
-				F0CF5EC50304689F971DD1B2 /* Frameworks */,
+				9D8F43AB1FBD88A30001BAE9 /* PSProgressHUD */,
+				9D8F43C41FBD88A30001BAE9 /* PSProgressHUDTests */,
+				9D8F43CF1FBD88A30001BAE9 /* PSProgressHUDUITests */,
+				9D8F43AA1FBD88A30001BAE9 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		9DDCAC281FA7219B00AD7858 /* Products */ = {
+		9D8F43AA1FBD88A30001BAE9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9DDCAC271FA7219B00AD7858 /* PSProgressHUD.app */,
-				9DDCAC3F1FA7219B00AD7858 /* PSProgressHUDTests.xctest */,
-				9DDCAC4A1FA7219B00AD7858 /* PSProgressHUDUITests.xctest */,
+				9D8F43A91FBD88A30001BAE9 /* PSProgressHUD.app */,
+				9D8F43C11FBD88A30001BAE9 /* PSProgressHUDTests.xctest */,
+				9D8F43CC1FBD88A30001BAE9 /* PSProgressHUDUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9DDCAC291FA7219B00AD7858 /* PSProgressHUD */ = {
+		9D8F43AB1FBD88A30001BAE9 /* PSProgressHUD */ = {
 			isa = PBXGroup;
 			children = (
-				9DDCAC5C1FA721A600AD7858 /* PSProgressHUD */,
-				9DDCAC2A1FA7219B00AD7858 /* AppDelegate.h */,
-				9DDCAC2B1FA7219B00AD7858 /* AppDelegate.m */,
-				9DDCAC2D1FA7219B00AD7858 /* ViewController.h */,
-				9DDCAC2E1FA7219B00AD7858 /* ViewController.m */,
-				9DDCAC301FA7219B00AD7858 /* Main.storyboard */,
-				9DDCAC331FA7219B00AD7858 /* Assets.xcassets */,
-				9DDCAC351FA7219B00AD7858 /* LaunchScreen.storyboard */,
-				9DDCAC381FA7219B00AD7858 /* Info.plist */,
-				9DDCAC391FA7219B00AD7858 /* main.m */,
+				9D8F43AC1FBD88A30001BAE9 /* AppDelegate.h */,
+				9D8F43AD1FBD88A30001BAE9 /* AppDelegate.m */,
+				9D8F43AF1FBD88A30001BAE9 /* ViewController.h */,
+				9D8F43B01FBD88A30001BAE9 /* ViewController.m */,
+				9D8F43B21FBD88A30001BAE9 /* Main.storyboard */,
+				9D8F43B51FBD88A30001BAE9 /* Assets.xcassets */,
+				9D8F43B71FBD88A30001BAE9 /* LaunchScreen.storyboard */,
+				9D8F43BA1FBD88A30001BAE9 /* Info.plist */,
+				9D8F43BB1FBD88A30001BAE9 /* main.m */,
 			);
 			path = PSProgressHUD;
 			sourceTree = "<group>";
 		};
-		9DDCAC421FA7219B00AD7858 /* PSProgressHUDTests */ = {
+		9D8F43C41FBD88A30001BAE9 /* PSProgressHUDTests */ = {
 			isa = PBXGroup;
 			children = (
-				9DDCAC431FA7219B00AD7858 /* PSProgressHUDTests.m */,
-				9DDCAC451FA7219B00AD7858 /* Info.plist */,
+				9D8F43C51FBD88A30001BAE9 /* PSProgressHUDTests.m */,
+				9D8F43C71FBD88A30001BAE9 /* Info.plist */,
 			);
 			path = PSProgressHUDTests;
 			sourceTree = "<group>";
 		};
-		9DDCAC4D1FA7219B00AD7858 /* PSProgressHUDUITests */ = {
+		9D8F43CF1FBD88A30001BAE9 /* PSProgressHUDUITests */ = {
 			isa = PBXGroup;
 			children = (
-				9DDCAC4E1FA7219B00AD7858 /* PSProgressHUDUITests.m */,
-				9DDCAC501FA7219B00AD7858 /* Info.plist */,
+				9D8F43D01FBD88A30001BAE9 /* PSProgressHUDUITests.m */,
+				9D8F43D21FBD88A30001BAE9 /* Info.plist */,
 			);
 			path = PSProgressHUDUITests;
-			sourceTree = "<group>";
-		};
-		9DDCAC5C1FA721A600AD7858 /* PSProgressHUD */ = {
-			isa = PBXGroup;
-			children = (
-				9DDCAC5D1FA721B100AD7858 /* PSProgressHUD.h */,
-				9DDCAC5E1FA721B100AD7858 /* PSProgressHUD.m */,
-			);
-			path = PSProgressHUD;
-			sourceTree = "<group>";
-		};
-		F0CF5EC50304689F971DD1B2 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				7EFD4246BB1E299E723370E2 /* libPods-PSProgressHUD.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		F19ED08BE2617BBF64133249 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				B319C594B12A429A7FC676E5 /* Pods-PSProgressHUD.debug.xcconfig */,
-				28EBAE4709DAA2CFA7BD16BD /* Pods-PSProgressHUD.release.xcconfig */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9DDCAC261FA7219B00AD7858 /* PSProgressHUD */ = {
+		9D8F43A81FBD88A30001BAE9 /* PSProgressHUD */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9DDCAC531FA7219B00AD7858 /* Build configuration list for PBXNativeTarget "PSProgressHUD" */;
+			buildConfigurationList = 9D8F43D51FBD88A30001BAE9 /* Build configuration list for PBXNativeTarget "PSProgressHUD" */;
 			buildPhases = (
-				6FB37954B34BB7D7A6CF37F5 /* [CP] Check Pods Manifest.lock */,
-				9DDCAC231FA7219B00AD7858 /* Sources */,
-				9DDCAC241FA7219B00AD7858 /* Frameworks */,
-				9DDCAC251FA7219B00AD7858 /* Resources */,
-				4542C3847163ABBBB4E54FF1 /* [CP] Embed Pods Frameworks */,
-				235CF217B1A692E31D495BE1 /* [CP] Copy Pods Resources */,
+				9D8F43A51FBD88A30001BAE9 /* Sources */,
+				9D8F43A61FBD88A30001BAE9 /* Frameworks */,
+				9D8F43A71FBD88A30001BAE9 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -189,71 +149,71 @@
 			);
 			name = PSProgressHUD;
 			productName = PSProgressHUD;
-			productReference = 9DDCAC271FA7219B00AD7858 /* PSProgressHUD.app */;
+			productReference = 9D8F43A91FBD88A30001BAE9 /* PSProgressHUD.app */;
 			productType = "com.apple.product-type.application";
 		};
-		9DDCAC3E1FA7219B00AD7858 /* PSProgressHUDTests */ = {
+		9D8F43C01FBD88A30001BAE9 /* PSProgressHUDTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9DDCAC561FA7219B00AD7858 /* Build configuration list for PBXNativeTarget "PSProgressHUDTests" */;
+			buildConfigurationList = 9D8F43D81FBD88A30001BAE9 /* Build configuration list for PBXNativeTarget "PSProgressHUDTests" */;
 			buildPhases = (
-				9DDCAC3B1FA7219B00AD7858 /* Sources */,
-				9DDCAC3C1FA7219B00AD7858 /* Frameworks */,
-				9DDCAC3D1FA7219B00AD7858 /* Resources */,
+				9D8F43BD1FBD88A30001BAE9 /* Sources */,
+				9D8F43BE1FBD88A30001BAE9 /* Frameworks */,
+				9D8F43BF1FBD88A30001BAE9 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				9DDCAC411FA7219B00AD7858 /* PBXTargetDependency */,
+				9D8F43C31FBD88A30001BAE9 /* PBXTargetDependency */,
 			);
 			name = PSProgressHUDTests;
 			productName = PSProgressHUDTests;
-			productReference = 9DDCAC3F1FA7219B00AD7858 /* PSProgressHUDTests.xctest */;
+			productReference = 9D8F43C11FBD88A30001BAE9 /* PSProgressHUDTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		9DDCAC491FA7219B00AD7858 /* PSProgressHUDUITests */ = {
+		9D8F43CB1FBD88A30001BAE9 /* PSProgressHUDUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9DDCAC591FA7219B00AD7858 /* Build configuration list for PBXNativeTarget "PSProgressHUDUITests" */;
+			buildConfigurationList = 9D8F43DB1FBD88A40001BAE9 /* Build configuration list for PBXNativeTarget "PSProgressHUDUITests" */;
 			buildPhases = (
-				9DDCAC461FA7219B00AD7858 /* Sources */,
-				9DDCAC471FA7219B00AD7858 /* Frameworks */,
-				9DDCAC481FA7219B00AD7858 /* Resources */,
+				9D8F43C81FBD88A30001BAE9 /* Sources */,
+				9D8F43C91FBD88A30001BAE9 /* Frameworks */,
+				9D8F43CA1FBD88A30001BAE9 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				9DDCAC4C1FA7219B00AD7858 /* PBXTargetDependency */,
+				9D8F43CE1FBD88A30001BAE9 /* PBXTargetDependency */,
 			);
 			name = PSProgressHUDUITests;
 			productName = PSProgressHUDUITests;
-			productReference = 9DDCAC4A1FA7219B00AD7858 /* PSProgressHUDUITests.xctest */;
+			productReference = 9D8F43CC1FBD88A30001BAE9 /* PSProgressHUDUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		9DDCAC1F1FA7219B00AD7858 /* Project object */ = {
+		9D8F43A11FBD88A30001BAE9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0900;
+				LastUpgradeCheck = 0910;
 				ORGANIZATIONNAME = huangzhifei;
 				TargetAttributes = {
-					9DDCAC261FA7219B00AD7858 = {
-						CreatedOnToolsVersion = 9.0.1;
+					9D8F43A81FBD88A30001BAE9 = {
+						CreatedOnToolsVersion = 9.1;
 						ProvisioningStyle = Automatic;
 					};
-					9DDCAC3E1FA7219B00AD7858 = {
-						CreatedOnToolsVersion = 9.0.1;
+					9D8F43C01FBD88A30001BAE9 = {
+						CreatedOnToolsVersion = 9.1;
 						ProvisioningStyle = Automatic;
-						TestTargetID = 9DDCAC261FA7219B00AD7858;
+						TestTargetID = 9D8F43A81FBD88A30001BAE9;
 					};
-					9DDCAC491FA7219B00AD7858 = {
-						CreatedOnToolsVersion = 9.0.1;
+					9D8F43CB1FBD88A30001BAE9 = {
+						CreatedOnToolsVersion = 9.1;
 						ProvisioningStyle = Automatic;
-						TestTargetID = 9DDCAC261FA7219B00AD7858;
+						TestTargetID = 9D8F43A81FBD88A30001BAE9;
 					};
 				};
 			};
-			buildConfigurationList = 9DDCAC221FA7219B00AD7858 /* Build configuration list for PBXProject "PSProgressHUD" */;
+			buildConfigurationList = 9D8F43A41FBD88A30001BAE9 /* Build configuration list for PBXProject "PSProgressHUD" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -261,37 +221,37 @@
 				en,
 				Base,
 			);
-			mainGroup = 9DDCAC1E1FA7219B00AD7858;
-			productRefGroup = 9DDCAC281FA7219B00AD7858 /* Products */;
+			mainGroup = 9D8F43A01FBD88A30001BAE9;
+			productRefGroup = 9D8F43AA1FBD88A30001BAE9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9DDCAC261FA7219B00AD7858 /* PSProgressHUD */,
-				9DDCAC3E1FA7219B00AD7858 /* PSProgressHUDTests */,
-				9DDCAC491FA7219B00AD7858 /* PSProgressHUDUITests */,
+				9D8F43A81FBD88A30001BAE9 /* PSProgressHUD */,
+				9D8F43C01FBD88A30001BAE9 /* PSProgressHUDTests */,
+				9D8F43CB1FBD88A30001BAE9 /* PSProgressHUDUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		9DDCAC251FA7219B00AD7858 /* Resources */ = {
+		9D8F43A71FBD88A30001BAE9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9DDCAC371FA7219B00AD7858 /* LaunchScreen.storyboard in Resources */,
-				9DDCAC341FA7219B00AD7858 /* Assets.xcassets in Resources */,
-				9DDCAC321FA7219B00AD7858 /* Main.storyboard in Resources */,
+				9D8F43B91FBD88A30001BAE9 /* LaunchScreen.storyboard in Resources */,
+				9D8F43B61FBD88A30001BAE9 /* Assets.xcassets in Resources */,
+				9D8F43B41FBD88A30001BAE9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9DDCAC3D1FA7219B00AD7858 /* Resources */ = {
+		9D8F43BF1FBD88A30001BAE9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9DDCAC481FA7219B00AD7858 /* Resources */ = {
+		9D8F43CA1FBD88A30001BAE9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -300,110 +260,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		235CF217B1A692E31D495BE1 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PSProgressHUD/Pods-PSProgressHUD-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		4542C3847163ABBBB4E54FF1 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PSProgressHUD/Pods-PSProgressHUD-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		6FB37954B34BB7D7A6CF37F5 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		9DDCAC231FA7219B00AD7858 /* Sources */ = {
+		9D8F43A51FBD88A30001BAE9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9DDCAC2F1FA7219B00AD7858 /* ViewController.m in Sources */,
-				9DDCAC3A1FA7219B00AD7858 /* main.m in Sources */,
-				9DDCAC2C1FA7219B00AD7858 /* AppDelegate.m in Sources */,
-				9DDCAC5F1FA721B100AD7858 /* PSProgressHUD.m in Sources */,
+				9D8F43B11FBD88A30001BAE9 /* ViewController.m in Sources */,
+				9D8F43BC1FBD88A30001BAE9 /* main.m in Sources */,
+				9D8F43AE1FBD88A30001BAE9 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9DDCAC3B1FA7219B00AD7858 /* Sources */ = {
+		9D8F43BD1FBD88A30001BAE9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9DDCAC441FA7219B00AD7858 /* PSProgressHUDTests.m in Sources */,
+				9D8F43C61FBD88A30001BAE9 /* PSProgressHUDTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9DDCAC461FA7219B00AD7858 /* Sources */ = {
+		9D8F43C81FBD88A30001BAE9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9DDCAC4F1FA7219B00AD7858 /* PSProgressHUDUITests.m in Sources */,
+				9D8F43D11FBD88A30001BAE9 /* PSProgressHUDUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		9DDCAC411FA7219B00AD7858 /* PBXTargetDependency */ = {
+		9D8F43C31FBD88A30001BAE9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 9DDCAC261FA7219B00AD7858 /* PSProgressHUD */;
-			targetProxy = 9DDCAC401FA7219B00AD7858 /* PBXContainerItemProxy */;
+			target = 9D8F43A81FBD88A30001BAE9 /* PSProgressHUD */;
+			targetProxy = 9D8F43C21FBD88A30001BAE9 /* PBXContainerItemProxy */;
 		};
-		9DDCAC4C1FA7219B00AD7858 /* PBXTargetDependency */ = {
+		9D8F43CE1FBD88A30001BAE9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 9DDCAC261FA7219B00AD7858 /* PSProgressHUD */;
-			targetProxy = 9DDCAC4B1FA7219B00AD7858 /* PBXContainerItemProxy */;
+			target = 9D8F43A81FBD88A30001BAE9 /* PSProgressHUD */;
+			targetProxy = 9D8F43CD1FBD88A30001BAE9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		9DDCAC301FA7219B00AD7858 /* Main.storyboard */ = {
+		9D8F43B21FBD88A30001BAE9 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				9DDCAC311FA7219B00AD7858 /* Base */,
+				9D8F43B31FBD88A30001BAE9 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		9DDCAC351FA7219B00AD7858 /* LaunchScreen.storyboard */ = {
+		9D8F43B71FBD88A30001BAE9 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				9DDCAC361FA7219B00AD7858 /* Base */,
+				9D8F43B81FBD88A30001BAE9 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -411,7 +322,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		9DDCAC511FA7219B00AD7858 /* Debug */ = {
+		9D8F43D31FBD88A30001BAE9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -466,7 +377,7 @@
 			};
 			name = Debug;
 		};
-		9DDCAC521FA7219B00AD7858 /* Release */ = {
+		9D8F43D41FBD88A30001BAE9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -515,41 +426,35 @@
 			};
 			name = Release;
 		};
-		9DDCAC541FA7219B00AD7858 /* Debug */ = {
+		9D8F43D61FBD88A30001BAE9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B319C594B12A429A7FC676E5 /* Pods-PSProgressHUD.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 2JDXBDZP8Y;
 				INFOPLIST_FILE = PSProgressHUD/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hzf.PSProgressHUD;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		9DDCAC551FA7219B00AD7858 /* Release */ = {
+		9D8F43D71FBD88A30001BAE9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 28EBAE4709DAA2CFA7BD16BD /* Pods-PSProgressHUD.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 2JDXBDZP8Y;
 				INFOPLIST_FILE = PSProgressHUD/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hzf.PSProgressHUD;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
-		9DDCAC571FA7219B00AD7858 /* Debug */ = {
+		9D8F43D91FBD88A30001BAE9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -564,7 +469,7 @@
 			};
 			name = Debug;
 		};
-		9DDCAC581FA7219B00AD7858 /* Release */ = {
+		9D8F43DA1FBD88A30001BAE9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -579,7 +484,7 @@
 			};
 			name = Release;
 		};
-		9DDCAC5A1FA7219B00AD7858 /* Debug */ = {
+		9D8F43DC1FBD88A40001BAE9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -593,7 +498,7 @@
 			};
 			name = Debug;
 		};
-		9DDCAC5B1FA7219B00AD7858 /* Release */ = {
+		9D8F43DD1FBD88A40001BAE9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -610,43 +515,43 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9DDCAC221FA7219B00AD7858 /* Build configuration list for PBXProject "PSProgressHUD" */ = {
+		9D8F43A41FBD88A30001BAE9 /* Build configuration list for PBXProject "PSProgressHUD" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9DDCAC511FA7219B00AD7858 /* Debug */,
-				9DDCAC521FA7219B00AD7858 /* Release */,
+				9D8F43D31FBD88A30001BAE9 /* Debug */,
+				9D8F43D41FBD88A30001BAE9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9DDCAC531FA7219B00AD7858 /* Build configuration list for PBXNativeTarget "PSProgressHUD" */ = {
+		9D8F43D51FBD88A30001BAE9 /* Build configuration list for PBXNativeTarget "PSProgressHUD" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9DDCAC541FA7219B00AD7858 /* Debug */,
-				9DDCAC551FA7219B00AD7858 /* Release */,
+				9D8F43D61FBD88A30001BAE9 /* Debug */,
+				9D8F43D71FBD88A30001BAE9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9DDCAC561FA7219B00AD7858 /* Build configuration list for PBXNativeTarget "PSProgressHUDTests" */ = {
+		9D8F43D81FBD88A30001BAE9 /* Build configuration list for PBXNativeTarget "PSProgressHUDTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9DDCAC571FA7219B00AD7858 /* Debug */,
-				9DDCAC581FA7219B00AD7858 /* Release */,
+				9D8F43D91FBD88A30001BAE9 /* Debug */,
+				9D8F43DA1FBD88A30001BAE9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9DDCAC591FA7219B00AD7858 /* Build configuration list for PBXNativeTarget "PSProgressHUDUITests" */ = {
+		9D8F43DB1FBD88A40001BAE9 /* Build configuration list for PBXNativeTarget "PSProgressHUDUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9DDCAC5A1FA7219B00AD7858 /* Debug */,
-				9DDCAC5B1FA7219B00AD7858 /* Release */,
+				9D8F43DC1FBD88A40001BAE9 /* Debug */,
+				9D8F43DD1FBD88A40001BAE9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 9DDCAC1F1FA7219B00AD7858 /* Project object */;
+	rootObject = 9D8F43A11FBD88A30001BAE9 /* Project object */;
 }
