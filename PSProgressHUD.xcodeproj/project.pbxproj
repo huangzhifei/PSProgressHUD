@@ -15,6 +15,8 @@
 		9D8F43BC1FBD88A30001BAE9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D8F43BB1FBD88A30001BAE9 /* main.m */; };
 		9D8F43C61FBD88A30001BAE9 /* PSProgressHUDTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D8F43C51FBD88A30001BAE9 /* PSProgressHUDTests.m */; };
 		9D8F43D11FBD88A30001BAE9 /* PSProgressHUDUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D8F43D01FBD88A30001BAE9 /* PSProgressHUDUITests.m */; };
+		9D8F43E31FBD9A6E0001BAE9 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D8F43DF1FBD9A6D0001BAE9 /* MBProgressHUD.m */; };
+		9D8F43E41FBD9A6E0001BAE9 /* PSProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D8F43E11FBD9A6E0001BAE9 /* PSProgressHUD.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		9D8F43CC1FBD88A30001BAE9 /* PSProgressHUDUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PSProgressHUDUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D8F43D01FBD88A30001BAE9 /* PSProgressHUDUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PSProgressHUDUITests.m; sourceTree = "<group>"; };
 		9D8F43D21FBD88A30001BAE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D8F43DF1FBD9A6D0001BAE9 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		9D8F43E01FBD9A6D0001BAE9 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		9D8F43E11FBD9A6E0001BAE9 /* PSProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSProgressHUD.m; sourceTree = "<group>"; };
+		9D8F43E21FBD9A6E0001BAE9 /* PSProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSProgressHUD.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +107,7 @@
 		9D8F43AB1FBD88A30001BAE9 /* PSProgressHUD */ = {
 			isa = PBXGroup;
 			children = (
+				9D8F43DE1FBD9A4C0001BAE9 /* PSProgressHUD */,
 				9D8F43AC1FBD88A30001BAE9 /* AppDelegate.h */,
 				9D8F43AD1FBD88A30001BAE9 /* AppDelegate.m */,
 				9D8F43AF1FBD88A30001BAE9 /* ViewController.h */,
@@ -130,6 +137,17 @@
 				9D8F43D21FBD88A30001BAE9 /* Info.plist */,
 			);
 			path = PSProgressHUDUITests;
+			sourceTree = "<group>";
+		};
+		9D8F43DE1FBD9A4C0001BAE9 /* PSProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				9D8F43E01FBD9A6D0001BAE9 /* MBProgressHUD.h */,
+				9D8F43DF1FBD9A6D0001BAE9 /* MBProgressHUD.m */,
+				9D8F43E21FBD9A6E0001BAE9 /* PSProgressHUD.h */,
+				9D8F43E11FBD9A6E0001BAE9 /* PSProgressHUD.m */,
+			);
+			path = PSProgressHUD;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,8 +284,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D8F43B11FBD88A30001BAE9 /* ViewController.m in Sources */,
+				9D8F43E41FBD9A6E0001BAE9 /* PSProgressHUD.m in Sources */,
 				9D8F43BC1FBD88A30001BAE9 /* main.m in Sources */,
 				9D8F43AE1FBD88A30001BAE9 /* AppDelegate.m in Sources */,
+				9D8F43E31FBD9A6E0001BAE9 /* MBProgressHUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
