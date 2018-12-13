@@ -48,7 +48,7 @@
 
 - (IBAction)HUD_Toast_KeyWindow:(id)sender {
     [PSProgressHUD showMessageHUD:^(PSProgressHUD *make) {
-        make.message(@"我是提示").afterDelay(2);
+        make.message(@"我是提示");
     }];
 }
 
@@ -66,7 +66,7 @@
 
 - (IBAction)HUD_Toast_CurrentView:(id)sender {
     [PSProgressHUD showMessageHUD:^(PSProgressHUD *make) {
-        make.message(@"我是提示").afterDelay(2).inViewType(PSHUDInViewType_CurrentView);
+        make.message(@"我是提示").inViewType(PSHUDInViewType_CurrentView);
     }];
 }
 

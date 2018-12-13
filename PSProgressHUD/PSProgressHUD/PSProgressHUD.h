@@ -58,7 +58,7 @@ typedef NS_ENUM(NSUInteger, PSHUDInViewType) {
 - (PSProgressHUD * (^)(UIView *) )customView;
 
 /**
- .afterDelay 消失时间，默认是 0 秒，即不消失
+ .afterDelay 消失时间，默认是 0 秒，即不消失，防止出现不消失的场景，如果传 0，会默认设置 20 秒后自动消失
  */
 - (PSProgressHUD * (^)(NSTimeInterval))afterDelay;
 

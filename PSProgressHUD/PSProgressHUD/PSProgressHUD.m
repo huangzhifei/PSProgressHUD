@@ -43,7 +43,6 @@ typedef NS_ENUM(NSUInteger, PSProgressType) {
         _ps_progressType = 0;
         [UIActivityIndicatorView appearanceWhenContainedIn:[MBProgressHUD class], nil].color = [UIColor whiteColor];
         [MBBarProgressView appearanceWhenContainedIn:[MBProgressHUD class], nil].progressRemainingColor = [UIColor whiteColor];
-//        [MBBarProgressView appearanceWhenContainedIn:[MBProgressHUD class], nil].progressColor = [UIColor redColor];
     }
     return self;
 }
@@ -147,6 +146,9 @@ typedef NS_ENUM(NSUInteger, PSProgressType) {
         }
         if (makeObj.ps_afterDelay > 0) {
             [hud hideAnimated:YES afterDelay:makeObj.ps_afterDelay];
+        } else {
+            makeObj.ps_afterDelay = 20;
+            [hud hideAnimated:YES afterDelay:makeObj.ps_afterDelay];
         }
         if (makeObj.ps_customView) {
             hud.customView = makeObj.ps_customView;
@@ -162,6 +164,10 @@ typedef NS_ENUM(NSUInteger, PSProgressType) {
     block(makeObj);
     [MBProgressHUD hideHUDForView:makeObj.ps_inView animated:makeObj.ps_animated];
     __block MBProgressHUD *hud = nil;
+    // 默认 2 秒后自动消失
+    if (makeObj.ps_afterDelay <= 0) {
+        makeObj.ps_afterDelay = 2.0f;
+    }
     dispatch_async(dispatch_get_main_queue(), ^{
         MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:makeObj.ps_inView animated:makeObj.ps_animated];
         hud.bezelView.style = MBProgressHUDBackgroundStyleSolidColor;
@@ -179,6 +185,9 @@ typedef NS_ENUM(NSUInteger, PSProgressType) {
         }
         if (makeObj.ps_afterDelay > 0) {
             [hud hideAnimated:YES afterDelay:makeObj.ps_afterDelay];
+        } else {
+            makeObj.ps_afterDelay = 20;
+            [hud hideAnimated:YES afterDelay:makeObj.ps_afterDelay];
         }
         if (makeObj.ps_customView) {
             hud.customView = makeObj.ps_customView;
@@ -190,9 +199,11 @@ typedef NS_ENUM(NSUInteger, PSProgressType) {
 }
 
 + (void)hideHUD:(void (^)(PSProgressHUD *))block {
-    PSProgressHUD *makeObj = [[PSProgressHUD alloc] init];
-    block(makeObj);
-    [MBProgressHUD hideHUDForView:makeObj.ps_inView animated:makeObj.ps_animated];
+    dispatch_async(dispatch_get_main_queue(), ^{
+        PSProgressHUD *makeObj = [[PSProgressHUD alloc] init];
+        block(makeObj);
+        [MBProgressHUD hideHUDForView:makeObj.ps_inView animated:makeObj.ps_animated];
+    });
 }
 
 - (UIViewController *)fmi_topViewController {
