@@ -125,7 +125,13 @@ typedef NS_ENUM(NSUInteger, PSProgressType) {
 
 #pragma mark - Method
 
-+ (void)showHUD:(void (^)(PSProgressHUD *))block {
+#pragma mark - Loading
+
++ (void)showLoadingHUD:(void (^)(PSProgressHUD *))block {
+    [self showLoadingHUD:block multiline:NO];
+}
+
++ (void)showLoadingHUD:(void (^)(PSProgressHUD *))block multiline:(BOOL)flag {
     if ([NSThread isMainThread]) {
         PSProgressHUD *makeObj = [[PSProgressHUD alloc] init];
         block(makeObj);
@@ -133,7 +139,12 @@ typedef NS_ENUM(NSUInteger, PSProgressType) {
         MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:makeObj.ps_inView animated:makeObj.ps_animated];
         hud.bezelView.style = MBProgressHUDBackgroundStyleSolidColor;
         hud.bezelView.backgroundColor = [UIColor colorWithWhite:0.f alpha:0.9f];
-        hud.label.text = makeObj.ps_message;
+        if (flag) {
+            hud.detailsLabel.text = makeObj.ps_message;
+            hud.detailsLabel.font = [UIFont systemFontOfSize:17.0];
+        } else {
+            hud.label.text = makeObj.ps_message;
+        }
         hud.removeFromSuperViewOnHide = YES;
         hud.userInteractionEnabled = !makeObj.ps_maskType;
         if (makeObj.ps_progressType == PSProgressType_HorizontalBar) {
@@ -153,13 +164,27 @@ typedef NS_ENUM(NSUInteger, PSProgressType) {
             hud.customView = makeObj.ps_customView;
             hud.mode = MBProgressHUDModeCustomView;
         }
-        hud.label.textColor = [UIColor whiteColor];
+        if (flag) {
+            hud.detailsLabel.textColor = [UIColor whiteColor];
+        } else {
+            hud.label.textColor = [UIColor whiteColor];
+        }
     } else {
         NSAssert(NO, @"必须在主线程调用 UI 相关");
     }
 }
 
+#pragma mark - Toast Message
+
 + (void)showMessageHUD:(void (^)(PSProgressHUD *))block {
+    [self showMessageHUD:block multiline:NO];
+}
+
++ (void)showMultilineMessageHUD:(void (^)(PSProgressHUD *))block {
+    [self showMessageHUD:block multiline:YES];
+}
+
++ (void)showMessageHUD:(void (^)(PSProgressHUD *))block multiline:(BOOL)flag {
     if ([NSThread isMainThread]) {
         PSProgressHUD *makeObj = [[PSProgressHUD alloc] init];
         block(makeObj);
@@ -171,7 +196,13 @@ typedef NS_ENUM(NSUInteger, PSProgressType) {
         MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:makeObj.ps_inView animated:makeObj.ps_animated];
         hud.bezelView.style = MBProgressHUDBackgroundStyleSolidColor;
         hud.bezelView.backgroundColor = [UIColor colorWithWhite:0.f alpha:0.9f];
-        hud.label.text = makeObj.ps_message;
+        if (flag) {
+            hud.detailsLabel.text = makeObj.ps_message;
+            hud.detailsLabel.font = [UIFont systemFontOfSize:17];
+        } else {
+            hud.label.text = makeObj.ps_message;
+            hud.label.font = [UIFont systemFontOfSize:17];
+        }
         hud.mode = MBProgressHUDModeText;
         hud.removeFromSuperViewOnHide = YES;
         hud.userInteractionEnabled = !makeObj.ps_maskType;
@@ -192,17 +223,25 @@ typedef NS_ENUM(NSUInteger, PSProgressType) {
             hud.customView = makeObj.ps_customView;
             hud.mode = MBProgressHUDModeCustomView;
         }
-        hud.label.textColor = [UIColor whiteColor];
+        if (flag) {
+            hud.detailsLabel.textColor = [UIColor whiteColor];
+        } else {
+            hud.label.textColor = [UIColor whiteColor];
+        }
     } else {
         NSAssert(NO, @"必须在主线程调用 UI 相关");
     }
 }
+
+#pragma mark - Hide HUD
 
 + (void)hideHUD:(void (^)(PSProgressHUD *))block {
     PSProgressHUD *makeObj = [[PSProgressHUD alloc] init];
     block(makeObj);
     [MBProgressHUD hideHUDForView:makeObj.ps_inView animated:makeObj.ps_animated];
 }
+
+#pragma mark - Get view
 
 - (UIViewController *)fmi_topViewController {
     UIViewController *topVC = [UIApplication sharedApplication].delegate.window.rootViewController;

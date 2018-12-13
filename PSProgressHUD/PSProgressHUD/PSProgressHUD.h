@@ -1,7 +1,7 @@
 //
 //  PSProgressHUD.h
 //  PSProgressHUD
-//  0.0.5
+//  0.0.6
 //  Created by eric on 2017/6/9.
 //  Copyright © 2017年 Formax. All rights reserved.
 //
@@ -55,7 +55,7 @@ typedef NS_ENUM(NSUInteger, PSHUDInViewType) {
 /**
  .customView(view),设置自定义的 customView
  */
-- (PSProgressHUD * (^)(UIView *) )customView;
+- (PSProgressHUD * (^)(UIView *))customView;
 
 /**
  .afterDelay 消失时间，默认是 0 秒，即不消失，防止出现不消失的场景，如果传 0，会默认设置 20 秒后自动消失
@@ -63,14 +63,24 @@ typedef NS_ENUM(NSUInteger, PSHUDInViewType) {
 - (PSProgressHUD * (^)(NSTimeInterval))afterDelay;
 
 /**
- 显示带有转子动画的内容（可以包括文本），默认不消失，需要主动 hide 或设置自动消失时间
+ 显示带有转子动画的内容（可以包括单行文本），默认不消失，需要主动 hide 或设置自动消失时间
  */
-+ (void)showHUD:(void (^)(PSProgressHUD *make))block;
++ (void)showLoadingHUD:(void (^)(PSProgressHUD *make))block;
 
 /**
- 仅仅显示纯文本内容 (Toast)，默认 2 秒后自动消失
+ 显示带有转子动画的内容（可以包括多行文本），默认不消失，需要主动 hide 或设置自动消失时间
+ */
++ (void)showLoadingHUD:(void (^)(PSProgressHUD *make))block multiline:(BOOL)flag;
+
+/**
+ 仅仅显示单行纯文本内容 (Toast)，默认 2 秒后自动消失
  */
 + (void)showMessageHUD:(void (^)(PSProgressHUD *make))block;
+
+/**
+ 显示多行纯文本内容 (Toast)，默认 2 秒后自动消失
+ */
++ (void)showMultilineMessageHUD:(void (^)(PSProgressHUD *make))block;
 
 /**
  hide 的 view 要和 show 的 view 是一样的，主要通过设置 inViewType

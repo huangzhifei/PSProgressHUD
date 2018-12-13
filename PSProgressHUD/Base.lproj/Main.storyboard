@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gG9-fv-rOy">
-                                <rect key="frame" x="44.5" y="114" width="286" height="30"/>
+                                <rect key="frame" x="44.5" y="84" width="286" height="30"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="HUD 纯转子 2 秒 自动消失（keyWindow)">
                                     <color key="titleColor" red="0.0" green="0.5" blue="0.22551091214203756" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -29,7 +29,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nD0-ZO-0ti">
-                                <rect key="frame" x="31.5" y="160" width="312" height="30"/>
+                                <rect key="frame" x="31.5" y="130" width="312" height="30"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="HUD 文字+转子 2 秒 自动消失（keyWindow)">
                                     <color key="titleColor" red="0.0" green="0.5" blue="0.22551091209999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -39,7 +39,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sPi-vz-2yp">
-                                <rect key="frame" x="36.5" y="206" width="302" height="30"/>
+                                <rect key="frame" x="36.5" y="176" width="302" height="30"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="HUD 文字提示 2 秒 自动消失（keyWindow)">
                                     <color key="titleColor" red="0.0" green="0.5" blue="0.22551091209999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -49,7 +49,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nzu-aE-ArB">
-                                <rect key="frame" x="34" y="300" width="307" height="30"/>
+                                <rect key="frame" x="34" y="242" width="307" height="30"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="HUD 文字提示 2 秒 自动消失（currentView)">
                                     <color key="titleColor" red="0.0" green="0.5" blue="0.22551091209999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -59,7 +59,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BsF-zB-KNw">
-                                <rect key="frame" x="29" y="346" width="317" height="30"/>
+                                <rect key="frame" x="29" y="288" width="317" height="30"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="HUD 文字+转子 2 秒 自动消失（currentView)">
                                     <color key="titleColor" red="0.0" green="0.5" blue="0.22551091209999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -69,7 +69,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CQ6-IJ-ERr">
-                                <rect key="frame" x="34" y="392" width="307" height="30"/>
+                                <rect key="frame" x="34" y="334" width="307" height="30"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="HUD 文字提示 2 秒 自动消失（currentView)">
                                     <color key="titleColor" red="0.0" green="0.5" blue="0.22551091209999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -79,7 +79,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qG9-X9-8xc">
-                                <rect key="frame" x="30.5" y="458" width="314" height="30"/>
+                                <rect key="frame" x="30.5" y="400" width="314" height="30"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="HUD 文字提示 5 秒后手动消失（keyWindow)">
                                     <color key="titleColor" red="0.0" green="0.5" blue="0.22551091209999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -89,7 +89,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SFs-Za-DWn">
-                                <rect key="frame" x="28" y="496" width="319" height="30"/>
+                                <rect key="frame" x="28" y="438" width="319" height="30"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="HUD 文字提示 5 秒后手动消失（currentView)">
                                     <color key="titleColor" red="0.0" green="0.5" blue="0.22551091209999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -98,21 +98,45 @@
                                     <action selector="HUD_Program_CurrentView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zgv-71-7Cl"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LUa-Jg-vxq">
+                                <rect key="frame" x="77.5" y="504" width="220" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="HUD 自定义视图（keyWindow)">
+                                    <color key="titleColor" red="0.0" green="0.5" blue="0.22551091209999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="HUD_CustomView_KeyWindow:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xn7-yO-KWU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lCy-N1-nbO">
+                                <rect key="frame" x="64.5" y="551" width="246" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="HUD 多行文字+转子（keyWindow)">
+                                    <color key="titleColor" red="0.0" green="0.5" blue="0.22551091209999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="HUD_MText_KeyWindow:" destination="BYZ-38-t0r" eventType="touchUpInside" id="P5t-40-MMH"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.88624156861862668" green="1" blue="0.15685682267681922" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="gG9-fv-rOy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="32P-Lx-eor"/>
+                            <constraint firstItem="gG9-fv-rOy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="32P-Lx-eor"/>
                             <constraint firstItem="gG9-fv-rOy" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="6DU-h1-xKd"/>
                             <constraint firstItem="CQ6-IJ-ERr" firstAttribute="top" secondItem="BsF-zB-KNw" secondAttribute="bottom" constant="16" id="ALy-mv-54y"/>
                             <constraint firstItem="SFs-Za-DWn" firstAttribute="top" secondItem="qG9-X9-8xc" secondAttribute="bottom" constant="8" id="EcK-U8-cJK"/>
+                            <constraint firstItem="LUa-Jg-vxq" firstAttribute="centerX" secondItem="SFs-Za-DWn" secondAttribute="centerX" id="KUh-S4-M63"/>
                             <constraint firstItem="BsF-zB-KNw" firstAttribute="top" secondItem="Nzu-aE-ArB" secondAttribute="bottom" constant="16" id="OPz-gb-Uwx"/>
                             <constraint firstItem="nD0-ZO-0ti" firstAttribute="centerX" secondItem="gG9-fv-rOy" secondAttribute="centerX" id="Pww-uk-gMg"/>
+                            <constraint firstItem="lCy-N1-nbO" firstAttribute="centerX" secondItem="LUa-Jg-vxq" secondAttribute="centerX" id="ZIT-9o-fQU"/>
                             <constraint firstItem="SFs-Za-DWn" firstAttribute="centerX" secondItem="qG9-X9-8xc" secondAttribute="centerX" id="aVX-om-gSL"/>
+                            <constraint firstItem="LUa-Jg-vxq" firstAttribute="top" secondItem="SFs-Za-DWn" secondAttribute="bottom" constant="36" id="eBA-Sz-rFV"/>
                             <constraint firstItem="qG9-X9-8xc" firstAttribute="top" secondItem="CQ6-IJ-ERr" secondAttribute="bottom" constant="36" id="h6m-jg-dqs"/>
                             <constraint firstItem="BsF-zB-KNw" firstAttribute="centerX" secondItem="Nzu-aE-ArB" secondAttribute="centerX" id="hEY-nI-n64"/>
                             <constraint firstItem="qG9-X9-8xc" firstAttribute="centerX" secondItem="CQ6-IJ-ERr" secondAttribute="centerX" id="hfd-KL-kW8"/>
-                            <constraint firstItem="Nzu-aE-ArB" firstAttribute="top" secondItem="sPi-vz-2yp" secondAttribute="bottom" constant="64" id="rBz-j5-OKe"/>
+                            <constraint firstItem="Nzu-aE-ArB" firstAttribute="top" secondItem="sPi-vz-2yp" secondAttribute="bottom" constant="36" id="rBz-j5-OKe"/>
                             <constraint firstItem="sPi-vz-2yp" firstAttribute="top" secondItem="nD0-ZO-0ti" secondAttribute="bottom" constant="16" id="t3g-97-fp2"/>
+                            <constraint firstItem="lCy-N1-nbO" firstAttribute="top" secondItem="LUa-Jg-vxq" secondAttribute="bottom" constant="17" id="uIB-K6-3Mh"/>
                             <constraint firstItem="sPi-vz-2yp" firstAttribute="centerX" secondItem="nD0-ZO-0ti" secondAttribute="centerX" id="uWS-9l-tHf"/>
                             <constraint firstItem="CQ6-IJ-ERr" firstAttribute="centerX" secondItem="BsF-zB-KNw" secondAttribute="centerX" id="ugv-Cz-yqT"/>
                             <constraint firstItem="Nzu-aE-ArB" firstAttribute="centerX" secondItem="sPi-vz-2yp" secondAttribute="centerX" id="v0f-FL-zi1"/>
@@ -124,7 +148,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-50" y="25"/>
+            <point key="canvasLocation" x="-265" y="17"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="r6Q-S4-a0w">
