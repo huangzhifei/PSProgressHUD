@@ -6,7 +6,7 @@
 //  Copyright © 2017年 Formax. All rights reserved.
 //
 
-#import "MBProgressHUD.h"
+#import <MBProgressHUD/MBProgressHUD.h>
 
 #define kPSProgressHUD [PSProgressHUD new]
 
