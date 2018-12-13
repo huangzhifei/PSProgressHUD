@@ -1,7 +1,7 @@
 //
 //  PSProgressHUD.h
 //  PSProgressHUD
-//  0.0.2
+//  0.0.5
 //  Created by eric on 2017/6/9.
 //  Copyright © 2017年 Formax. All rights reserved.
 //
@@ -65,12 +65,12 @@ typedef NS_ENUM(NSUInteger, PSHUDInViewType) {
 /**
  显示带有转子动画的内容（可以包括文本），默认不消失，需要主动 hide 或设置自动消失时间
  */
-+ (MBProgressHUD *)showHUD:(void (^)(PSProgressHUD *make))block;
++ (void)showHUD:(void (^)(PSProgressHUD *make))block;
 
 /**
  仅仅显示纯文本内容 (Toast)，默认 2 秒后自动消失
  */
-+ (MBProgressHUD *)showMessageHUD:(void (^)(PSProgressHUD *make))block;
++ (void)showMessageHUD:(void (^)(PSProgressHUD *make))block;
 
 /**
  hide 的 view 要和 show 的 view 是一样的，主要通过设置 inViewType
