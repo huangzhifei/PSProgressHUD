@@ -8,6 +8,12 @@
 
 #import "PSProgressHUD.h"
 
+typedef NS_ENUM(NSUInteger, PSProgressType) {
+    PSProgressType_Default = 0,
+    PSProgressType_HorizontalBar, //水平进度条
+    PSProgressType_AnnularBar,    //环形进度条
+};
+
 @interface PSProgressHUD ()
 
 //全都可以使用的参数
@@ -17,7 +23,7 @@
 @property (nonatomic, strong) UIView *ps_customView;        /* 自定义的view */
 @property (nonatomic, strong) NSString *ps_customIconName;  /* 自定义的小图标 */
 @property (nonatomic, strong) NSString *ps_message;         /* hud上面的文字 */
-@property (nonatomic, assign) NSTimeInterval ps_afterDelay; /* 自动消失时间,default = 1.5 */
+@property (nonatomic, assign) NSTimeInterval ps_afterDelay; /* 自动消失时间,default = 0 */
 //只有进度条使用的
 @property (nonatomic, assign) PSProgressType ps_progressType; /* 进度条类型：水平横条或者圆形 */
 
@@ -35,74 +41,86 @@
         _ps_maskType = PSHUDMaskType_Clear;
         _ps_afterDelay = 0.0f;
         _ps_progressType = 0;
+        [UIActivityIndicatorView appearanceWhenContainedIn:[MBProgressHUD class], nil].color = [UIColor whiteColor];
+        [MBBarProgressView appearanceWhenContainedIn:[MBProgressHUD class], nil].progressRemainingColor = [UIColor whiteColor];
+//        [MBBarProgressView appearanceWhenContainedIn:[MBProgressHUD class], nil].progressColor = [UIColor redColor];
     }
     return self;
 }
 
-- (PSProgressHUD * (^)(UIView *))inView {
+- (PSProgressHUD * (^)(UIView *) )inView {
+    __weak typeof(self) weakSelf = self;
     return ^PSProgressHUD *(id obj) {
-        _ps_inView = obj;
-        return self;
+        weakSelf.ps_inView = obj;
+        return weakSelf;
     };
 }
 
-- (PSProgressHUD * (^)(UIView *))customView {
+- (PSProgressHUD * (^)(UIView *) )customView {
+    __weak typeof(self) weakSelf = self;
     return ^PSProgressHUD *(id obj) {
-        _ps_customView = obj;
-        return self;
+        weakSelf.ps_customView = obj;
+        return weakSelf;
     };
 }
 
-- (PSProgressHUD * (^)(NSString *))customIconName {
+- (PSProgressHUD * (^)(NSString *) )customIconName {
+    __weak typeof(self) weakSelf = self;
     return ^PSProgressHUD *(id obj) {
-        _ps_customIconName = obj;
-        return self;
+        weakSelf.ps_customIconName = obj;
+        return weakSelf;
     };
 }
 
 - (PSProgressHUD * (^)(PSHUDInViewType))inViewType {
+    __weak typeof(self) weakSelf = self;
     return ^PSProgressHUD *(PSHUDInViewType inViewType) {
         if (inViewType == PSHUDInViewType_KeyWindow) {
-            _ps_inView = [UIApplication sharedApplication].keyWindow;
+            weakSelf.ps_inView = [UIApplication sharedApplication].keyWindow;
         } else if (inViewType == PSHUDInViewType_CurrentView) {
-            _ps_inView = [self fmi_topViewController].view;
+            weakSelf.ps_inView = [self fmi_topViewController].view;
         }
-        return self;
+        return weakSelf;
     };
 }
 
 - (PSProgressHUD * (^)(BOOL))animated {
+    __weak typeof(self) weakSelf = self;
     return ^PSProgressHUD *(BOOL animated) {
-        _ps_animated = animated;
-        return self;
+        weakSelf.ps_animated = animated;
+        return weakSelf;
     };
 }
 
 - (PSProgressHUD * (^)(PSHUDMaskType))maskType {
+    __weak typeof(self) weakSelf = self;
     return ^PSProgressHUD *(PSHUDMaskType maskType) {
-        _ps_maskType = maskType;
-        return self;
+        weakSelf.ps_maskType = maskType;
+        return weakSelf;
     };
 }
 
 - (PSProgressHUD * (^)(NSTimeInterval))afterDelay {
+    __weak typeof(self) weakSelf = self;
     return ^PSProgressHUD *(NSTimeInterval afterDelay) {
-        _ps_afterDelay = afterDelay;
-        return self;
+        weakSelf.ps_afterDelay = afterDelay;
+        return weakSelf;
     };
 }
 
-- (PSProgressHUD * (^)(NSString *))message {
+- (PSProgressHUD * (^)(NSString *) )message {
+    __weak typeof(self) weakSelf = self;
     return ^PSProgressHUD *(NSString *msg) {
-        _ps_message = msg;
-        return self;
+        weakSelf.ps_message = msg;
+        return weakSelf;
     };
 }
 
-- (PSProgressHUD *(^)(PSProgressType))progressType {
+- (PSProgressHUD * (^)(PSProgressType))progressType {
+    __weak typeof(self) weakSelf = self;
     return ^PSProgressHUD *(PSProgressType progressType) {
-        _ps_progressType = progressType;
-        return self;
+        weakSelf.ps_progressType = progressType;
+        return weakSelf;
     };
 }
 
@@ -115,20 +133,26 @@
     __block MBProgressHUD *hud = nil;
     dispatch_async(dispatch_get_main_queue(), ^{
         MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:makeObj.ps_inView animated:makeObj.ps_animated];
-        hud.labelText = makeObj.ps_message;
+        hud.bezelView.style = MBProgressHUDBackgroundStyleSolidColor;
+        hud.bezelView.backgroundColor = [UIColor colorWithWhite:0.f alpha:0.9f];
+        hud.label.text = makeObj.ps_message;
+        hud.removeFromSuperViewOnHide = YES;
         hud.userInteractionEnabled = !makeObj.ps_maskType;
         if (makeObj.ps_progressType == PSProgressType_HorizontalBar) {
+            hud.bezelView.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:1.0];
             hud.mode = MBProgressHUDModeDeterminateHorizontalBar;
         } else if (makeObj.ps_progressType == PSProgressType_AnnularBar) {
+            hud.bezelView.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:1.0];
             hud.mode = MBProgressHUDModeAnnularDeterminate;
         }
         if (makeObj.ps_afterDelay > 0) {
-            [hud hide:YES afterDelay:makeObj.ps_afterDelay];
+            [hud hideAnimated:YES afterDelay:makeObj.ps_afterDelay];
         }
         if (makeObj.ps_customView) {
             hud.customView = makeObj.ps_customView;
             hud.mode = MBProgressHUDModeCustomView;
         }
+        hud.label.textColor = [UIColor whiteColor];
     });
     return hud;
 }
@@ -140,21 +164,27 @@
     __block MBProgressHUD *hud = nil;
     dispatch_async(dispatch_get_main_queue(), ^{
         MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:makeObj.ps_inView animated:makeObj.ps_animated];
-        hud.labelText = makeObj.ps_message;
+        hud.bezelView.style = MBProgressHUDBackgroundStyleSolidColor;
+        hud.bezelView.backgroundColor = [UIColor colorWithWhite:0.f alpha:0.9f];
+        hud.label.text = makeObj.ps_message;
         hud.mode = MBProgressHUDModeText;
+        hud.removeFromSuperViewOnHide = YES;
         hud.userInteractionEnabled = !makeObj.ps_maskType;
         if (makeObj.ps_progressType == PSProgressType_HorizontalBar) {
+            hud.bezelView.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:1.0];
             hud.mode = MBProgressHUDModeDeterminateHorizontalBar;
         } else if (makeObj.ps_progressType == PSProgressType_AnnularBar) {
+            hud.bezelView.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:1.0];
             hud.mode = MBProgressHUDModeAnnularDeterminate;
         }
         if (makeObj.ps_afterDelay > 0) {
-            [hud hide:YES afterDelay:makeObj.ps_afterDelay];
+            [hud hideAnimated:YES afterDelay:makeObj.ps_afterDelay];
         }
         if (makeObj.ps_customView) {
             hud.customView = makeObj.ps_customView;
             hud.mode = MBProgressHUDModeCustomView;
         }
+        hud.label.textColor = [UIColor whiteColor];
     });
     return hud;
 }
@@ -166,12 +196,11 @@
 }
 
 - (UIViewController *)fmi_topViewController {
-    //页面分多层，找到当前打开的页面再navigation
     UIViewController *topVC = [UIApplication sharedApplication].delegate.window.rootViewController;
     while (topVC.presentedViewController) {
         topVC = topVC.presentedViewController;
     }
-    
+
     if ([topVC isKindOfClass:[UITabBarController class]]) {
         UITabBarController *mainview = (UITabBarController *) topVC;
         UINavigationController *selectView = [mainview.viewControllers objectAtIndex:mainview.selectedIndex];

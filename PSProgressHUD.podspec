@@ -9,11 +9,11 @@
 Pod::Spec.new do |s|
 
   s.name         = "PSProgressHUD"
-  s.version      = "0.0.1"
-  s.summary      = "使用链式的方式来封装MBProgressHUD,方便书写"
+  s.version      = "0.0.2"
+  s.summary      = "使用链式的方式来封装MBProgressHUD，方便书写"
 
   s.description  = <<-DESC 
-  使用链式的方式来封装MBProgressHUD,方便书写,是基于MBProgressHUD的0.9.2版本，会自动带上此版本
+  使用链式的方式来封装MBProgressHUD,方便书写,基于MBProgressHUD的1.1.0版本，适配成0.9.x的样式
                    DESC
 
   s.homepage     = "https://github.com/huangzhifei/PSProgressHUD.git"
@@ -31,5 +31,7 @@ Pod::Spec.new do |s|
   s.frameworks = 'UIKit', 'Foundation', 'CoreGraphics'
 
   s.requires_arc = true
+
+  s.dependency 'MBProgressHUD', '~> 1.1.0'
   
 end

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vwl-6w-kG5">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment version="2304" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -17,12 +17,132 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gG9-fv-rOy">
+                                <rect key="frame" x="44.5" y="114" width="286" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="HUD 纯转子 2 秒 自动消失（keyWindow)">
+                                    <color key="titleColor" red="0.0" green="0.5" blue="0.22551091214203756" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="HUD_KeyWindow:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sck-qn-kv4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nD0-ZO-0ti">
+                                <rect key="frame" x="31.5" y="160" width="312" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="HUD 文字+转子 2 秒 自动消失（keyWindow)">
+                                    <color key="titleColor" red="0.0" green="0.5" blue="0.22551091209999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="HUD_Text_KeyWindow:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gMI-YR-TG9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sPi-vz-2yp">
+                                <rect key="frame" x="36.5" y="206" width="302" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="HUD 文字提示 2 秒 自动消失（keyWindow)">
+                                    <color key="titleColor" red="0.0" green="0.5" blue="0.22551091209999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="HUD_Toast_KeyWindow:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sdq-hQ-ayT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nzu-aE-ArB">
+                                <rect key="frame" x="34" y="300" width="307" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="HUD 文字提示 2 秒 自动消失（currentView)">
+                                    <color key="titleColor" red="0.0" green="0.5" blue="0.22551091209999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="HUD_CurrentView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sXT-6Z-lUd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BsF-zB-KNw">
+                                <rect key="frame" x="29" y="346" width="317" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="HUD 文字+转子 2 秒 自动消失（currentView)">
+                                    <color key="titleColor" red="0.0" green="0.5" blue="0.22551091209999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="HUD_Text_CurrentView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="C4k-4t-AuT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CQ6-IJ-ERr">
+                                <rect key="frame" x="34" y="392" width="307" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="HUD 文字提示 2 秒 自动消失（currentView)">
+                                    <color key="titleColor" red="0.0" green="0.5" blue="0.22551091209999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="HUD_Toast_CurrentView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zQR-OL-5Cb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qG9-X9-8xc">
+                                <rect key="frame" x="30.5" y="458" width="314" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="HUD 文字提示 5 秒后手动消失（keyWindow)">
+                                    <color key="titleColor" red="0.0" green="0.5" blue="0.22551091209999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="HUD_Program_KeyWindow:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qcc-jb-XHJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SFs-Za-DWn">
+                                <rect key="frame" x="28" y="496" width="319" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="HUD 文字提示 5 秒后手动消失（currentView)">
+                                    <color key="titleColor" red="0.0" green="0.5" blue="0.22551091209999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="HUD_Program_CurrentView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zgv-71-7Cl"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.88624156861862668" green="1" blue="0.15685682267681922" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="gG9-fv-rOy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="32P-Lx-eor"/>
+                            <constraint firstItem="gG9-fv-rOy" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="6DU-h1-xKd"/>
+                            <constraint firstItem="CQ6-IJ-ERr" firstAttribute="top" secondItem="BsF-zB-KNw" secondAttribute="bottom" constant="16" id="ALy-mv-54y"/>
+                            <constraint firstItem="SFs-Za-DWn" firstAttribute="top" secondItem="qG9-X9-8xc" secondAttribute="bottom" constant="8" id="EcK-U8-cJK"/>
+                            <constraint firstItem="BsF-zB-KNw" firstAttribute="top" secondItem="Nzu-aE-ArB" secondAttribute="bottom" constant="16" id="OPz-gb-Uwx"/>
+                            <constraint firstItem="nD0-ZO-0ti" firstAttribute="centerX" secondItem="gG9-fv-rOy" secondAttribute="centerX" id="Pww-uk-gMg"/>
+                            <constraint firstItem="SFs-Za-DWn" firstAttribute="centerX" secondItem="qG9-X9-8xc" secondAttribute="centerX" id="aVX-om-gSL"/>
+                            <constraint firstItem="qG9-X9-8xc" firstAttribute="top" secondItem="CQ6-IJ-ERr" secondAttribute="bottom" constant="36" id="h6m-jg-dqs"/>
+                            <constraint firstItem="BsF-zB-KNw" firstAttribute="centerX" secondItem="Nzu-aE-ArB" secondAttribute="centerX" id="hEY-nI-n64"/>
+                            <constraint firstItem="qG9-X9-8xc" firstAttribute="centerX" secondItem="CQ6-IJ-ERr" secondAttribute="centerX" id="hfd-KL-kW8"/>
+                            <constraint firstItem="Nzu-aE-ArB" firstAttribute="top" secondItem="sPi-vz-2yp" secondAttribute="bottom" constant="64" id="rBz-j5-OKe"/>
+                            <constraint firstItem="sPi-vz-2yp" firstAttribute="top" secondItem="nD0-ZO-0ti" secondAttribute="bottom" constant="16" id="t3g-97-fp2"/>
+                            <constraint firstItem="sPi-vz-2yp" firstAttribute="centerX" secondItem="nD0-ZO-0ti" secondAttribute="centerX" id="uWS-9l-tHf"/>
+                            <constraint firstItem="CQ6-IJ-ERr" firstAttribute="centerX" secondItem="BsF-zB-KNw" secondAttribute="centerX" id="ugv-Cz-yqT"/>
+                            <constraint firstItem="Nzu-aE-ArB" firstAttribute="centerX" secondItem="sPi-vz-2yp" secondAttribute="centerX" id="v0f-FL-zi1"/>
+                            <constraint firstItem="nD0-ZO-0ti" firstAttribute="top" secondItem="gG9-fv-rOy" secondAttribute="bottom" constant="16" id="z8R-3T-X2B"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="n7O-SM-UbS"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-50" y="25"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="r6Q-S4-a0w">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vwl-6w-kG5" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="gH1-vd-Vg6">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="oCG-MZ-JnR"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7w5-Fi-ACw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-969" y="33"/>
         </scene>
     </scenes>
 </document>

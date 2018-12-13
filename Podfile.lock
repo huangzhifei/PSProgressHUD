@@ -1,0 +1,20 @@
+PODS:
+  - HZFGCDTimer (0.0.3)
+  - MBProgressHUD (1.1.0)
+
+DEPENDENCIES:
+  - HZFGCDTimer
+  - MBProgressHUD
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - HZFGCDTimer
+    - MBProgressHUD
+
+SPEC CHECKSUMS:
+  HZFGCDTimer: f28ad4058fab0ebaa9f350fb7b2c7a4d84ba3078
+  MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
+
+PODFILE CHECKSUM: 732f7fc614c436db89d13b74b85a080f73fd84a3
+
+COCOAPODS: 1.5.3
