@@ -64,7 +64,7 @@
     //    }];
 
     [PSProgressHUD showMultilineMessageHUD:^(PSProgressHUD *make) {
-        make.message(@"你没有该应用的使用权限\n如需使用,请联系该业务部门").inViewType(PSHUDInViewType_CurrentView);
+        make.message(@"你没有该应用的使用权限").inViewType(PSHUDInViewType_CurrentView);
     }];
 }
 
@@ -81,9 +81,7 @@
     [HZFGCDTimer scheduledTimerWithTimeInterval:5.0
                                         repeats:NO
                                           block:^{
-                                              [PSProgressHUD hideHUD:^(PSProgressHUD *make){
-
-                                              }];
+                                              [PSProgressHUD hideHUD:nil];
 
                                               [PSProgressHUD showMessageHUD:^(PSProgressHUD *make) {
                                                   make.message(@"Toast 提示");

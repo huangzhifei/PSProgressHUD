@@ -1,7 +1,7 @@
 //
 //  PSProgressHUD.h
 //  PSProgressHUD
-//  0.0.6
+//  version 0.0.7
 //  Created by eric on 2017/6/9.
 //  Copyright © 2017年 Formax. All rights reserved.
 //

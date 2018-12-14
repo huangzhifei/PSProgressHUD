@@ -134,7 +134,9 @@ typedef NS_ENUM(NSUInteger, PSProgressType) {
 + (void)showLoadingHUD:(void (^)(PSProgressHUD *))block multiline:(BOOL)flag {
     if ([NSThread isMainThread]) {
         PSProgressHUD *makeObj = [[PSProgressHUD alloc] init];
-        block(makeObj);
+        if (block) {
+            block(makeObj);
+        }
         [MBProgressHUD hideHUDForView:makeObj.ps_inView animated:makeObj.ps_animated];
         MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:makeObj.ps_inView animated:makeObj.ps_animated];
         hud.bezelView.style = MBProgressHUDBackgroundStyleSolidColor;
@@ -187,7 +189,9 @@ typedef NS_ENUM(NSUInteger, PSProgressType) {
 + (void)showMessageHUD:(void (^)(PSProgressHUD *))block multiline:(BOOL)flag {
     if ([NSThread isMainThread]) {
         PSProgressHUD *makeObj = [[PSProgressHUD alloc] init];
-        block(makeObj);
+        if (block) {
+            block(makeObj);
+        }
         [MBProgressHUD hideHUDForView:makeObj.ps_inView animated:makeObj.ps_animated];
         // 默认 2 秒后自动消失
         if (makeObj.ps_afterDelay <= 0) {
@@ -237,7 +241,9 @@ typedef NS_ENUM(NSUInteger, PSProgressType) {
 
 + (void)hideHUD:(void (^)(PSProgressHUD *))block {
     PSProgressHUD *makeObj = [[PSProgressHUD alloc] init];
-    block(makeObj);
+    if (block) {
+        block(makeObj);
+    }
     [MBProgressHUD hideHUDForView:makeObj.ps_inView animated:makeObj.ps_animated];
 }
 
