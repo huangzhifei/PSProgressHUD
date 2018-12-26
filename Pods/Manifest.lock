@@ -1,20 +1,29 @@
 PODS:
+  - CocoaLumberjack (3.3.0):
+    - CocoaLumberjack/Default (= 3.3.0)
+    - CocoaLumberjack/Extensions (= 3.3.0)
+  - CocoaLumberjack/Default (3.3.0)
+  - CocoaLumberjack/Extensions (3.3.0):
+    - CocoaLumberjack/Default
   - HZFGCDTimer (0.0.3)
   - MBProgressHUD (1.1.0)
 
 DEPENDENCIES:
+  - CocoaLumberjack (~> 3.3.0)
   - HZFGCDTimer
   - MBProgressHUD
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - CocoaLumberjack
     - HZFGCDTimer
     - MBProgressHUD
 
 SPEC CHECKSUMS:
+  CocoaLumberjack: 3c8c74683302f9012bb168e1c4b7ae3c0b558431
   HZFGCDTimer: f28ad4058fab0ebaa9f350fb7b2c7a4d84ba3078
   MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
 
-PODFILE CHECKSUM: 732f7fc614c436db89d13b74b85a080f73fd84a3
+PODFILE CHECKSUM: 8f849ff7250eeb753d970030cd1eb3fec8c14d94
 
 COCOAPODS: 1.5.3

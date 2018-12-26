@@ -7,6 +7,13 @@
 //
 
 #import "PSProgressHUD.h"
+#import <CocoaLumberjack/CocoaLumberjack.h>
+
+#ifdef DEBUG
+static DDLogLevel ddLogLevel = DDLogLevelVerbose;
+#else
+static DDLogLevel ddLogLevel = DDLogLevelInfo;
+#endif
 
 typedef NS_ENUM(NSUInteger, PSProgressType) {
     PSProgressType_Default = 0,
@@ -137,6 +144,11 @@ typedef NS_ENUM(NSUInteger, PSProgressType) {
         if (block) {
             block(makeObj);
         }
+        if (makeObj.ps_message.length > 0) {
+            DDLogInfo(@"HUD: %@", makeObj.ps_message);
+        } else {
+            DDLogInfo(@"HUD: %@", @"正在加载");
+        }
         [MBProgressHUD hideHUDForView:makeObj.ps_inView animated:makeObj.ps_animated];
         MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:makeObj.ps_inView animated:makeObj.ps_animated];
         hud.bezelView.style = MBProgressHUDBackgroundStyleSolidColor;
@@ -191,6 +203,11 @@ typedef NS_ENUM(NSUInteger, PSProgressType) {
         PSProgressHUD *makeObj = [[PSProgressHUD alloc] init];
         if (block) {
             block(makeObj);
+        }
+        if (makeObj.ps_message.length > 0) {
+            DDLogInfo(@"HUD: %@", makeObj.ps_message);
+        } else {
+            DDLogInfo(@"HUD: %@", @"正在加载");
         }
         [MBProgressHUD hideHUDForView:makeObj.ps_inView animated:makeObj.ps_animated];
         // 默认 2 秒后自动消失
@@ -247,7 +264,7 @@ typedef NS_ENUM(NSUInteger, PSProgressType) {
     [MBProgressHUD hideHUDForView:makeObj.ps_inView animated:makeObj.ps_animated];
 }
 
-#pragma mark - Get view
+#pragma mark - Get top view
 
 - (UIViewController *)fmi_topViewController {
     UIViewController *topVC = [UIApplication sharedApplication].delegate.window.rootViewController;

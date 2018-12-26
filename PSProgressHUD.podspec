@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "PSProgressHUD"
-  s.version      = "0.0.7"
+  s.version      = "0.0.8"
   s.summary      = "使用链式的方式来封装MBProgressHUD，方便书写"
 
   s.description  = <<-DESC 
@@ -33,5 +33,6 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   s.dependency 'MBProgressHUD', '~> 1.1.0'
+  s.dependency 'CocoaLumberjack', '~> 3.3.0'
   
 end
