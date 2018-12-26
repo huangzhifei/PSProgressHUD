@@ -78,13 +78,14 @@
     [PSProgressHUD showLoadingHUD:^(PSProgressHUD *make) {
         make.message(@"正在加载...");
     }];
-    [HZFGCDTimer scheduledTimerWithTimeInterval:5.0
+    [HZFGCDTimer scheduledTimerWithTimeInterval:1.0
                                         repeats:NO
                                           block:^{
                                               [PSProgressHUD hideHUD:nil];
 
                                               [PSProgressHUD showMessageHUD:^(PSProgressHUD *make) {
-                                                  make.message(@"Toast 提示");
+                                                  UIImageView *iv = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"icon_share_success"]];
+                                                  make.message(@"分享成功").customView(iv);
                                               }];
                                           }];
 }
@@ -96,9 +97,13 @@
     [HZFGCDTimer scheduledTimerWithTimeInterval:5.0
                                         repeats:NO
                                           block:^{
-                                              [PSProgressHUD hideHUD:^(PSProgressHUD *make) {
-                                                  make.inViewType(PSHUDInViewType_CurrentView);
+                                              NSLog(@"xxxxxxxxx");
+                                              [PSProgressHUD showLoadingHUD:^(PSProgressHUD *make) {
+                                                  make.inViewType(PSHUDInViewType_CurrentView).message(@"正在加载...").afterDelay(10);
                                               }];
+//                                              [PSProgressHUD hideHUD:^(PSProgressHUD *make) {
+//                                                  make.inViewType(PSHUDInViewType_CurrentView);
+//                                              }];
                                           }];
 }
 
